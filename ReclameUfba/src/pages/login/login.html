@@ -1,0 +1,32 @@
+<ion-header>
+
+  <ion-navbar color="nav">
+    <ion-title center>Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div padding>
+    <img class="logomarca" src="assets/imgs/logo_v1.png"/>
+  </div>
+
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Senha</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+</ion-list>
+
+  <div padding>
+    <button class="botao" color="secondary" ion-button full block (click)="openPage()" padding>Acessar</button>
+    <button class="botao" ion-button full block (click)="openPage()" padding>Acessar pelo Facebook</button>
+    <button class="botao" color="danger" ion-button full block (click)="openPage()" padding>Acessar pelo Google</button>
+  </div>
+
+</ion-content>
