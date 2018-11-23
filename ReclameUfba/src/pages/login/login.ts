@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { ListPage } from '../list/list';
+import { HomePage } from '../home/home';
 
 @IonicPage()
 @Component({
@@ -14,7 +14,7 @@ export class LoginPage {
   }
 
   openPage() {
-    this.navCtrl.setRoot(ListPage);
+    this.navCtrl.setRoot(HomePage);
   }
 
 }
