@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar color="logo">
+    <ion-title center>Cadastrar</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form>
+    <ion-list inset>
+      <ion-item>
+        <ion-label floating>Nome*</ion-label>
+        <ion-input maxlength="200" required="true" name="name" type="string"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>E-mail*</ion-label>
+        <ion-input email="true" minlength="3" maxlength="200" required="true" id="email" name="email" type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Telefone*</ion-label>
+        <ion-input required="true" id="phone" name="phone" type="tel" minlength="14" maxlength="15"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Senha*</ion-label>
+        <ion-input minlength="6" required="true" id="password" name="password" [type]="isTextFieldType ? 'text' : 'password'"></ion-input>
+        <button (click)="togglePasswordFieldType()" ion-button item-right type="button" clear>
+          <ion-icon class="eye-icon" [name]="isTextFieldType ? 'eye-off' : 'eye'"></ion-icon>
+        </button>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Curso*</ion-label>
+        <ion-input maxlength="200" required="true" name="curso" type="string"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Maricula*</ion-label>
+        <ion-input maxlength="200" required="true" name="matricula" type="string"></ion-input>
+      </ion-item>
+    </ion-list>
+    <div class="welcome">
+      Aceito os: <a clear class="estilo" color="primary" tappable>Termos de Uso</a>
+    </div>
+    <div padding>
+      <button class="botao" color="logo" ion-button full block (click)="openPage()" padding>Cadastrar</button>
+    </div>
+  </form>
+</ion-content>
