@@ -1,13 +1,19 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+/**
+ * Generated class for the ProfilePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
 
 @IonicPage()
 @Component({
-  selector: 'page-register',
-  templateUrl: 'register.html',
+  selector: 'page-profile',
+  templateUrl: 'profile.html',
 })
-export class RegisterPage {
+export class ProfilePage {
 
   isTextFieldType: boolean;
 
@@ -15,15 +21,11 @@ export class RegisterPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad RegisterPage');
+    console.log('ionViewDidLoad ProfilePage');
   }
 
   togglePasswordFieldType() {
     this.isTextFieldType = !this.isTextFieldType;
-  }
-
-  openPage() {
-    this.navCtrl.pop();
   }
 
 }
